@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router';
 import logo from '../assets/images/logo.svg'
 
 function Footer() {
@@ -7,8 +8,9 @@ function Footer() {
         {/* Logo / Brand */}
         <div className="footer-column">
           <h2 className="footer-title">
-            <img src={logo} alt="" />
-          </h2>
+<NavLink to={"/home"}>
+          <img src={logo} alt="Logo " />
+        </NavLink>          </h2>
           <p className="footer-description">
             A family-owned Mediterranean restaurant in Chicago. Taste the tradition with a modern twist.
           </p>

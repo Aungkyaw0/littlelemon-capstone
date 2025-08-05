@@ -14,7 +14,9 @@ function NavBar() {
   return (
     <nav>
       <div className="logo">
-        <img src={logo} alt="Logo " />
+        <NavLink to={"/home"}>
+          <img src={logo} alt="Logo " />
+        </NavLink>
       </div>
       <div className="nav-menus">
         <div className="nav-menu-items">
