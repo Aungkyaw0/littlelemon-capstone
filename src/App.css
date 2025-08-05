@@ -1,22 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap');
 nav{
-  background-color: lightblue;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 7rem;
   height: 4rem;
 }
 
 
+
 NavLink{
   text-decoration: none;
 }
 
-.nav-items{
+
+
+.nav-items, .login-btn{
   color: black;
   font-size: 18px;
   font-weight: 700;
+}
+
+.nav-items{
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.nav-items:hover{
+  background-color: #EDEFEE;
+  color: rgb(175, 167, 167);
+}
+
+.login-btn{
+  font-size: medium;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
 }
 
 .nav-menu-items{
@@ -76,8 +96,14 @@ NavLink{
   border: none;
   padding: 15px 30px;
   margin-bottom: 20px;
-  font-size: 18pt;
+  font-size: 14pt;
 }
+
+.hero-left > button:hover {
+  background-color: #e4bf06;
+  color: hsl(0, 0%, 40%);
+}
+
 
 
 .hero-right{
@@ -94,5 +120,184 @@ NavLink{
   height: 25rem;
 }
 
+/* Weekly Special Styling */
+
+.weekly-special{
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-bottom: 3rem;
+
+}
+
+.weekly-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weekly-header > h1{
+  font-family: "Markazi Text", serif;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.weekly-header > button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e4c62f;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.weekly-header > button:hover{
+    background-color: #ffd500;
+}
+
+.recipes{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+
+}
+
+.recipe-data{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-card{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+  background-color: #e2cfcf;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-card > .recipe-img-container{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 15rem;
+}
+
+.recipe-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.name-price{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-price > p{
+  color: #e97e04;
+  font-weight: 600;
+}
+
+.order-btn{  
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(241, 205, 23);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0.7rem;
+}
+
+.order-btn:hover{
+  background-color: #ffd500;
+}
 
 
+.footer {
+  background-color: #28a078;
+  color: #EDEFEE;
+  padding: 2rem 1rem;
+  font-family: "Karla", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.footer-title {
+  font-family: "Markazi Text", serif;
+  font-size: 2.5rem;
+  color: #F4CE14;
+  margin: 0 0 1rem;
+}
+
+.footer-description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footer-column h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #F4CE14;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  color: #EDEFEE;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #F4CE14;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 2rem;
+  }
+}

@@ -6,10 +6,10 @@ function NavBar() {
     { name: "Home", path: "/home" },
     { name: "About", path: "/about" },
     { name: "Menu", path: "" },
-    { name: "Reservations", path: "" },
+    { name: "Reservations", path: "/reservation" },
     { name: "Order Online", path: "" },
   ];
-  const navMenuStyle = { textDecoration: "none", color: "black" }
+  const navMenuStyle = { textDecoration: "none", color: "black",  };
 
   return (
     <nav>
@@ -34,8 +34,8 @@ function NavBar() {
         </div>
       </div>
       <div className="auth">
-        <button>
-          <NavLink> Login </NavLink>
+        <button className="login-btn">
+          <NavLink style={navMenuStyle}> Login </NavLink>
         </button>
       </div>
     </nav>

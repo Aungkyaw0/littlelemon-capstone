@@ -1,0 +1,84 @@
+.reservation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  background-color: #fdfdfb;
+  font-family: "Karla", sans-serif;
+}
+
+.reservation-form {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 1.2rem;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #495E57;
+  margin-bottom: 0.5rem;
+}
+
+.reservation-form label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+.reservation-form input[type="text"],
+.reservation-form input[type="email"],
+.reservation-form input[type="tel"],
+.reservation-form input[type="date"],
+.reservation-form input[type="number"],
+.reservation-form select {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.reservation-form input:focus,
+.reservation-form select:focus {
+  border-color: #F4CE14;
+  outline: none;
+}
+
+.reservation-form input[type="submit"] {
+  background-color: #F4CE14;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reservation-form input[type="submit"]:hover {
+  background-color: #e5bb10;
+}
+
+@media (max-width: 600px) {
+  .reservation-form {
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+
+  .form-title {
+    font-size: 1.3rem;
+  }
+
+  .reservation-form input[type="submit"] {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+}
